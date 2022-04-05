@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+sudo apt-get install curl
 sudo apt-get install zsh
 sudo apt-get install locate
 sudo apt-get install fzf
