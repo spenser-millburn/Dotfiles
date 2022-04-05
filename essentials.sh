@@ -23,5 +23,5 @@ cp -r $HOME/Dotfiles/zsh/.oh-my-zsh/custom $HOME/.oh-my-zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git && mv $HOME/zsh-syntax-highlighting $HOME/.oh-my-zsh/plugins/zsh-syntax-highlighting
 cp -r $HOME/Dotfiles/vim/.SpaceVim.d $HOME
 rm .zshrc
-cp $HOME/Dotfiles/zsh/.zshrc $HOME
-source $HOME/.zshrc
+cp $HOME/Dotfiles/zsh/.zshrc $HOME                                                                                                                                                                                         
+source $ZSH/oh-my-zsh.sh
