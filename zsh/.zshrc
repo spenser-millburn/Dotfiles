@@ -14,7 +14,6 @@ export GITHUB_TOKEN="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"
 
 #Plugins Sourcing
 plugins=(git)
-source ~/.scripts/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 
 #EOF
 source $ZSH/oh-my-zsh.sh
