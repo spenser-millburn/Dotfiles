@@ -24,3 +24,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git && mv $HOME/z
 cp -r $HOME/Dotfiles/vim/.SpaceVim.d $HOME
 rm .zshrc
 cp $HOME/Dotfiles/zsh/.zshrc $HOME
+source $HOME/.zshrc
