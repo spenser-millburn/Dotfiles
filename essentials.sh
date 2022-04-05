@@ -7,7 +7,8 @@ sudo apt-get install ranger
 sudo apt-get install tldr
 tldr --update
 sudo apt-get install neovim
-
+unzet ZSH
+rm -rf $HOME/.oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 curl -sLf https://spacevim.org/install.sh | bash
 
