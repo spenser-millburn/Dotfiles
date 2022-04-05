@@ -1,7 +1,7 @@
 # Dotfiles
 ---
 
-## USAGE on debian systems:
+## USAGE on debian based systems:
 ```
 git clone https://github.com/spenser-millburn/Dotfiles.git 
 sh Dotfiles/essentials.sh
