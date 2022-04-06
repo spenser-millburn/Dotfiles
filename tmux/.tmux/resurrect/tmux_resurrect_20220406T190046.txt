@@ -1,0 +1,5 @@
+pane	0	0	1	:*	0	:/home/pi	1	zsh	:
+pane	1	0	1	:*	0	:/home/pi	1	zsh	:
+window	0	0	:zsh	1	:*	c65d,80x29,0,0,0	:
+window	1	0	:zsh	1	:*	acde,210x50,0,0,1	:
+state	1	
