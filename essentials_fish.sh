@@ -24,7 +24,7 @@ sudo apt install gh
 # chsh -s $(which zsh)
 cp $HOME/Dotfiles/tmux/.tmux.conf $HOME
 rm -rf $HOME/.config/fish
-cp -r $HOME/Dotfiles/fish $HOME/.config/fish
+cp -r $HOME/Dotfiles/fish $HOME/.config
 rm -rf $HOME/.oh-my-zsh/custom
 cp -r $HOME/Dotfiles/zsh/.oh-my-zsh/custom $HOME/.oh-my-zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git && mv $HOME/zsh-syntax-highlighting $HOME/.oh-my-zsh/plugins/zsh-syntax-highlighting
