@@ -4,6 +4,7 @@ sudo apt-get install curl
 sudo apt-get install zsh
 sudo apt-get install fish
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
+sudo cp $HOME/Dotfiles/fish/fish_is_root_user.fish /usr/local/share/fish/functions/
 chsh -s /usr/local/bin/fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
