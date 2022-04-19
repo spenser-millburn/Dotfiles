@@ -4,7 +4,7 @@ sudo apt-get install curl
 sudo apt-get install zsh
 sudo apt-get install fish
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
-sudo cp $HOME/Dotfiles/fish/fish_is_root_user.fish /usr/local/share/fish/functions/
+sudo cp /home/pi/Dotfiles/fish/fish_is_root_user.fish /usr/share/fish/functions/ 
 chsh -s /usr/local/bin/fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
@@ -18,10 +18,10 @@ unzet ZSH
 rm -rf $HOME/.oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 curl -sLf https://spacevim.org/install.sh | bash
-curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-sudo apt update
-sudo apt install gh
+# curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+# echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+# sudo apt update
+# sudo apt install gh
 sudo cp $HOME/Dotfiles/ubuntu/chsh /etc/pam.d/chsh
 # chsh -s $(which zsh)
 cp $HOME/Dotfiles/tmux/.tmux.conf $HOME
