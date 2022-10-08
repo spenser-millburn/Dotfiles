@@ -33,24 +33,33 @@ name = 'shell'
 default_position = 'top'
 default_height = 30
 
+[[layers]]
+name = 'lang#c'
+enable_clang_syntax_highlight = true
+clang_executable="/usr/lib/clang"
+
 #Fuzzy
 [[layers]]
 name = "unite"
 
-#JS
+#C++/C
 [[layers]]
-name = "lang#javascript"
-format_on_save = true
+name = 'lang#c'
+enable_clang_syntax_highlight = true
+libclang_path='$HOME/.local/lib/python3.8/site-packages/clang/native/libclang.so'
 
 #Python
 [[layers]]
 name = "lang#python"
 
-#Themes
+
 [[custom_plugins]]
-repo="rafi/awesome-vim-colorschemes"
+repo="https://github.com/ryanoasis/vim-devicons"
+
+[[custom_plugins]]
+repo="https://github.com/joshdick/onedark.vim"
 [options]
-colorscheme="onehalfdark"
+colorscheme="onedark"
 
 #Linting
 [[layers]]

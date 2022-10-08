@@ -7,7 +7,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   sudo apt-get install zsh
   sudo apt-get install fish
   echo /usr/local/bin/fish | sudo tee -a /etc/shells
-  sudo cp /home/pi/Dotfiles/fish/fish_is_root_user.fish /usr/share/fish/functions/ 
+  sudo cp $HOME/Dotfiles/fish/fish_is_root_user.fish /usr/share/fish/functions/ 
   chsh -s /usr/local/bin/fish
   curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
@@ -45,7 +45,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
   fish_add_path /opt/homebrew/bin
   echo "/opt/homebrew/bin/fish" | sudo tee -a /etc/shells
   chsh -s /opt/homebrew/bin/fish
-  sudo cp /home/pi/Dotfiles/fish/fish_is_root_user.fish /usr/share/fish/functions/ 
+  sudo cp $HOME/Dotfiles/fish/fish_is_root_user.fish /usr/share/fish/functions/ 
   curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
   brew install fzf
 
