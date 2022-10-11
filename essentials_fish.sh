@@ -36,6 +36,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   cp -r $HOME/Dotfiles/vim/.SpaceVim.d $HOME
   rm .zshrc
   cp $HOME/Dotfiles/zsh/.zshrc $HOME                                                                                                                                                                                         
+  sudo apt-get install fonts-firacode
+  dconf load /org/gnome/terminal/legacy/profiles:/ < $HOME/Dotfiles/gnome/terminal/gnome-terminal-profiles.dconf
   # source $ZSH/oh-my-zsh.sh
   # ...
 elif [[ "$OSTYPE" == "darwin"* ]]; then
