@@ -1,0 +1,8 @@
+[aliases]
+
+
+# Substring match
+terminal= "$"
+
+# Escape if you want to match literal periods
+chrome = "browser"
