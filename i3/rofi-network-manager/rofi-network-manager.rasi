@@ -1,18 +1,18 @@
 configuration {
-	show-icons:		false;
+	show-icons:		true;
 	sidebar-mode: 	false;
 	hover-select: true;
 	me-select-entry: "";
 	me-accept-entry: [MousePrimary];
 }
 *{
-	font: "DejaVu Sans Mono 9";			//Font
+	font: "Fira Code Retina 9";			//Font
 	//Colors
-	foreground:#f8f8f2; 				//Text
-	background:#0A1229; 				//Background
-	accent:#00BCD4; 					//Highlight
+	foreground:#ffffff; 				//Text
+	background:#72947685; 				//Background
+	accent:#ffffff; 					//Highlight
 	foreground-selection:@foreground; 	//Selection_fg
-	background-selection:#e34039; 		//Selection_bg
+	background-selection:#26262650; 		//Selection_bg
 
 	transparent:					#ffffff00;
 	background-color:				@transparent;
