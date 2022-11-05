@@ -1,7 +1,7 @@
 #=============================================================================
 # dark_powered.toml --- dark powered configuration example for SpaceVim
-# Copyright (c) 2016-2021 Wang Shidong & Contributors
-# Author: Wang Shidong < wsdjeg at 163.com >
+# Copyright (c) 2016-2022 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg@outlook.com >
 # URL: https://spacevim.org
 # License: GPLv3
 #=============================================================================
@@ -11,23 +11,29 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
+    colorscheme = "gruvbox"
+    colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
     enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
     statusline_separator = "arrow"
+    tabline_show_devicons = true
     statusline_iseparator = "arrow"
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
     enable_statusline_mode = false
+
     bootstrap_before = 'myspacevim#before'
     bootstrap_after = 'myspacevim#after'
 
+
+#LSP
 [[layers]]
 name='lsp'
-filetypes = ["cpp"]    
-enabled_clients = ['clangd']
+filetypes = ["cpp","python"]    
+enabled_clients = ['clangd','pylsp']
 enable = true
 
 
@@ -37,6 +43,7 @@ name = 'autocomplete'
 auto_completion_return_key_behavior = "complete"
 auto_completion_tab_key_behavior = "smart"
 
+#Shell
 [[layers]]
 name = 'shell'
 default_position = 'top'
@@ -44,7 +51,7 @@ default_height = 30
 
 #Fuzzy
 [[layers]]
-name = "unite"
+    name = "denite"
 
 #C++/C
 [[layers]]
@@ -62,6 +69,8 @@ name = "checkers"
 #Python
 [[layers]]
 name = "lang#python"
+enabled_linters = ['python','pylint']
+
 
 #Markdown
 [[layers]]
@@ -74,17 +83,12 @@ name = "lang#markdown"
 #Treesitter layer
 [[layers]]
 name="treesitter"
-#Atom Colorcheme
+
+# Atom Colorcheme
 [[custom_plugins]]
 repo="https://github.com/joshdick/onedark.vim"
-
 [options]
 colorscheme="onedark"
-
-# VCS
-#[[layers]]
-#  name = "VersionControl"
-
 
 #Icons
 [[custom_plugins]]
@@ -103,15 +107,34 @@ hook_add = '''
 }
 EOF
 '''
+
 #Treesitter
 [[custom_plugins]]
 repo="https://github.com/nvim-treesitter/nvim-treesitter"
 
+#Surround
+[[custom_plugins]]
+repo="https://github.com/tpope/vim-surround"
+
+#Fugitive
+[[custom_plugins]]
+repo="https://github.com/tpope/vim-fugitive"
+
+#Gitgutter
+[[custom_plugins]]
+repo="https://github.com/airblade/vim-gitgutter"
+
+
 [[custom_plugins]]
 repo="https://github.com/ton/vim-alternate"
 
-
-Markdown Viewer
+# Markdown Viewer
 [[custom_plugins]]
 repo="https://github.com/iamcco/markdown-preview.nvim"
 
+#Unstack
+[[custom_plugins]]
+repo="https://github.com/mattboehm/vim-unstack"
+
+#Fish highlighting
+repo="https://github.com/dag/vim-fish"
