@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+source ./icons.sh
 killall -q polybar
 
 echo "---" | tee -a /tmp/polybar.log

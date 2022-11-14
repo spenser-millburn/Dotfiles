@@ -9,10 +9,10 @@ configuration {
 	font: "Fira Code Retina 9";			//Font
 	//Colors
 	foreground:#ffffff; 				//Text
-	background:#72947685; 				//Background
+	background:#282c34FF; 				//Background
 	accent:#ffffff; 					//Highlight
 	foreground-selection:@foreground; 	//Selection_fg
-	background-selection:#26262650; 		//Selection_bg
+	background-selection:#abb2bf99; 		//Selection_bg
 
 	transparent:					#ffffff00;
 	background-color:				@transparent;

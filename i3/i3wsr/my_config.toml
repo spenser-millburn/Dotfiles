@@ -1,6 +1,10 @@
 [aliases]
 
-terminal= "$"
-chrome = "browser"
-clion = "clion"
-Slack = "slack"
+terminal= ""
+chrome = ""
+clion = " CLion"
+Slack = ""
+Nautilus = ""
+Spotify = ""
+
+ 
