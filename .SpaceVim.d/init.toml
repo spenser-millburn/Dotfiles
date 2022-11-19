@@ -1,0 +1,179 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2022 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg@outlook.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+#-------------------------------------------------------------- SpaceVim Options --------------------------------------------------------------#
+
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    tabline_show_devicons = true
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = false
+    neomake_open_list = 0
+    bootstrap_before = 'myspacevim#before'
+    bootstrap_after = 'myspacevim#after'
+    autocomplete_method ="deoplete"
+
+#-------------------------------------------------------------- SpaceVim Layers --------------------------------------------------------------#
+
+#LSP
+[[layers]]
+name='lsp'
+filetypes = ["c","cpp","python"]    
+enabled_clients = ['clangd','pylsp']
+enable = true
+
+
+# Enable autocomplete layer
+[[layers]]
+name = 'autocomplete'
+auto_completion_tab_key_behavior = "cycle"
+auto_completion_return_key_behavior = "smart"
+auto_completion_delay = 200
+auto_completion_complete_with_key_sequence = "jk"
+auto_completion_complete_with_key_sequence_delay = 0.1
+#Shell
+[[layers]]
+name = 'shell'
+default_position = 'top'
+default_height = 30
+this it a test
+#Fuzzy
+[[layers]]
+    name = "denite"
+
+#C++/C
+[[layers]]
+name = 'lang#c'
+autocomplete_method = "deoplete"
+
+
+#Tagging
+[[layers]]
+name = "gtags"
+
+#Linting
+[[layers]]
+# name = "checkers"
+
+#Python
+[[layers]]
+name = "lang#python"
+enabled_linters = ['python','pylint']
+
+
+#Markdown
+[[layers]]
+name = "lang#markdown"
+
+#Code Formatting
+[[layers]]
+  name = "format"
+#Treesitter layer
+[[layers]]
+name="treesitter"
+
+#Telescope  
+[[layers]]
+  name= "telescope"
+
+#Leader fuzzy bindings
+# [[layers]]
+  # name = "leaderf"
+
+# zettelkasten
+[[layers]]
+  name = "zettelkasten"
+
+#-------------------------------------------------------------- CUSTOM PLUGINS--------------------------------------------------------------#
+# Atom Colorcheme
+[[custom_plugins]]
+repo="https://github.com/joshdick/onedark.vim"
+[options]
+colorscheme="onedark"
+
+#Icons
+[[custom_plugins]]
+repo="https://github.com/ryanoasis/vim-devicons"
+
+#Colorizer
+[[custom_plugins]]
+repo="https://github.com/norcalli/nvim-colorizer.lua"
+hook_add = '''
+  lua << EOF
+  vim.opt.termguicolors = true
+  require 'colorizer'.setup {
+  '*'; -- Highlight all files, but customize some others.
+  '!vim'; -- Exclude vim from highlighting.
+  -- Exclusion Only makes sense if '*' is specified!
+}
+EOF
+'''
+
+#Treesitter
+[[custom_plugins]]
+repo="https://github.com/nvim-treesitter/nvim-treesitter"
+
+#Surround
+[[custom_plugins]]
+repo="https://github.com/tpope/vim-surround"
+
+#Fugitive
+[[custom_plugins]]
+repo="https://github.com/tpope/vim-fugitive"
+
+#Gitgutter
+[[custom_plugins]]
+repo="https://github.com/airblade/vim-gitgutter"
+
+#Alternate
+[[custom_plugins]]
+repo="https://github.com/ton/vim-alternate"
+
+# Markdown Viewer
+[[custom_plugins]]
+repo="https://github.com/iamcco/markdown-preview.nvim"
+
+#Unstack
+[[custom_plugins]]
+repo="https://github.com/mattboehm/vim-unstack"
+
+#Fish highlighting
+repo="https://github.com/dag/vim-fish"
+
+#PlantUML
+[[custom_plugins]]
+repo="https://github.com/iamcco/markdown-preview.nvim"
+
+#PlantUML
+[[custom_plugins]]
+repo="https://github.com/aklt/plantuml-syntax"
+
+[[custom_plugins]]
+repo="https://github.com/tyru/open-browser.vim.git"
+
+[[custom_plugins]]
+repo="https://github.com/skanehira/preview-uml.vim"
+
+# [[custom_plugins]]
+# repo="https://github.com/neoclide/coc.nvim"
+#
+# [[custom_plugins]]
+# repo="https://github.com/SirVer/ultisnips"

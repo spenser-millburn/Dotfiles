@@ -1,0 +1,25 @@
+[build]
+command="qnx_71_toolchain && build"
+isBackground= false
+
+[package]
+command="qnx_71_toolchain && package"
+isBackground= false
+
+[package]
+command="qnx_71_toolchain && package && install"
+isBackground= false
+
+[install]
+command="qnx_71_toolchain && install"
+isBackground= false
+
+[qnx71_toolchain]
+command="qnx_71_toolchain"
+isBackground= false
+
+# [ntoaarch64_executable]
+# command="qnx_71_toolchain && ntoaarch64"
+# args=['linefollower.c', '-o', 'linefollower_v2', '-lspi-master' ]
+# isBackground= false
+
