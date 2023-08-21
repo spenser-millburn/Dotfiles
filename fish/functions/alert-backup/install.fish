@@ -1,4 +1,4 @@
-# Defined in /tmp/fish.huyf1F/install.fish @ line 2
+# Defined in /tmp/fish.NRAfTq/install.fish @ line 2
 function install
 
 # -------------------------------- TORADEX -------------------------------- #
@@ -9,8 +9,8 @@ function install
 # -------------------------------- SPLINTER -------------------------------- #
 
 # build
-# pfsplinter
-psplinter
+pfsplinter
+# psplinter
 splinter
 
 # -------------------------------- DONATELLO -------------------------------- #

@@ -1,13 +1,12 @@
-# Defined in /tmp/fish.4LLFdq/package.fish @ line 2
+# Defined in /tmp/fish.7Ni7c8/package.fish @ line 2
 function package
 	alphabot
-  cd $HOME/build/(git rev-parse --abbrev-ref HEAD)/$argv[1]
-  # make -j16 package ota-package apm-package
+  cd $ENVDIR/build/(branchname)/$argv[1]
   if [ "$argv[2]" = "init"]
     make -j16 package ota-package apm-package
   else
     make -j16 apm-package
   end
-  cp *prod*.apm $HOME/alphabot
-  cd $HOME/alphabot
+  cp *prod*.apm $ENVDIR/repo/alphabot
+  cd $ENVDIR/repo/alphabot
 end

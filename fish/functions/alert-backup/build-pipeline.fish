@@ -2,7 +2,7 @@
 function build-pipeline
     alphabot
     clean
-    compile 7.1
+    configure 7.1
     build
     package
     # install

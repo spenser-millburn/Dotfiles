@@ -1,3 +1,3 @@
 function a
-cd $HOME/alphabot
+  alphabot
 end

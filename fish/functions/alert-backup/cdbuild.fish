@@ -1,5 +1,5 @@
-# Defined in /tmp/fish.qKecEc/cdbuild.fish @ line 2
+# Defined in /tmp/fish.FSxxBC/cdbuild.fish @ line 2
 function cdbuild
 alphabot
-cd $HOME/build/(branchname)
+cd $ENVDIR/build/(branchname)
 end

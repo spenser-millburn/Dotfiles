@@ -1,3 +1,3 @@
 function cdr
-cd (git rev-parse --show-toplevel)
+cd $ENVDIR/repo
 end
