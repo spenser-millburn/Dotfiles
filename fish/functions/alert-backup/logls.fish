@@ -1,11 +1,11 @@
 function logls
 if not set -q argv[1]
-  ls -l (logdir)
+  ls -l (logdir) --sort newest
 else 
-  if [ "$argv[2]" != "latest" ]
-    ssh -t $argv[1] "ls - /var/alphabot_log;"
+  if [ "$argv[2]" = "latest" ]
+    ssh -t $argv[1] "ls -lt /mnt/sd_log |grep alphabot | grep -v data| head -n$argv[3]"
   else
-    ssh -t $argv[1] "ls -lt /var/alphabot_log/ | head -n 15"
+    ssh -t $argv[1] "ls -lt /mnt/sd_log;"
   end
 end
 

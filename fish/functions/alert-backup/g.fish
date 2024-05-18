@@ -1,3 +1,3 @@
 function g
-grep $argv
+  sgpt "$argv" --no-cache
 end

@@ -1,3 +1,4 @@
 function npm
-echo "use yarn instead"
+# echo "use yarn instead"
+bash -c "npm $argv"
 end

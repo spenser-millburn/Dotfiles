@@ -1,3 +1,3 @@
 function gr
-grep -r $argv
+gpt repl
 end

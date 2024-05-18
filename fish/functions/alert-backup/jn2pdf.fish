@@ -1,3 +1,3 @@
 function jn2pdf
-jupyter-nbconvert --to pdfviahtml $argv[1]
+jupyter-nbconvert --to pdf $argv[1]
 end

@@ -1,4 +1,4 @@
 function clean
 alphabot
-rm -rf $ENVDIR/build/(branchname)
+sudo rm -rf $ENVDIR/build/*
 end

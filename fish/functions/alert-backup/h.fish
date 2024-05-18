@@ -1,3 +1,3 @@
 function h
-cd $HOME
+history
 end

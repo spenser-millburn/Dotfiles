@@ -1,3 +1,3 @@
 function cdr
-cd $ENVDIR/repo
+cd $ENVDIR/repo/"$argv"
 end

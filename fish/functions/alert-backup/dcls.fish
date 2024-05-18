@@ -1,3 +1,3 @@
 function dcls
-docker container ls
+docker compose config --services
 end

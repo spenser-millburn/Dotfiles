@@ -1,4 +1,4 @@
 function fuzzh
 set some_command (history | fzf -e ) 
-eval $some_command
+echo $some_command
 end
