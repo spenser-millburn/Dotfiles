@@ -141,8 +141,6 @@ repo="https://github.com/airblade/vim-gitgutter"
 repo="https://github.com/ton/vim-alternate"
 
 # Markdown Viewer
-[[custom_plugins]]
-repo="https://github.com/iamcco/markdown-preview.nvim"
 
 #Unstack
 [[custom_plugins]]
@@ -152,8 +150,6 @@ repo="https://github.com/mattboehm/vim-unstack"
 repo="https://github.com/dag/vim-fish"
 
 #PlantUML
-[[custom_plugins]]
-repo="https://github.com/iamcco/markdown-preview.nvim"
 
 #PlantUML
 [[custom_plugins]]
